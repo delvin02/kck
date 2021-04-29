@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>KCK Kok Engineering</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Mixed-concrete">
+		<meta name="keyboards" content="concrete kelantan,concrete terengganu,mixed-concrete ,buy concrete,kck concrete">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+	    <link rel="stylesheet" type="text/css" href="styling.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+         <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Sora:wght@600&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+         <script src="parallax.min.js"></script>
+
+        <script src="java.js" defer></script>
+     <style>
+         li a,.logo { 
+             text-decoration: none;
+         }
+
+         @media only screen and (max-width: 768px){
+            first-background { 
+                display: block;
+                position: relative;
+            }
+
+
+         }
+         @media only screen and (min-width: 1024px) {
+            a .about1icon { 
+                width: 200px;
+                height: auto;
+                margin-top: 10px;
+         }
+         .smallerDevice-bg { 
+             display: none;
+         }
+        }
+        @media only screen and (max-width: 992px) {
+
+            a .about1icon { 
+                display: block;
+                width: 150px;
+                height: auto;
+                margin: 0 auto;
+         }
+         nav-change { 
+             display: none;
+         }
+            .logo { 
+                margin-top: 10px;
+            }
+        .mini-widgets { 
+            color: white;
+            font-size: 15px;
+        }
+        .topbar-text p { 
+            display: none;
+        }
+        .contactHead { 
+        display: block;
+        margin-top: 0;
+        font-size: 15px;
+        }
+        .hpnumber p  {
+            text-align: center;
+        }
+        .phone-call { 
+        font-size: 15px;
+        display: block;
+         }
+         div.navi-box { 
+            position: absolute;
+            width: 100%;
+             height: calc(86vh);
+             background: #333;
+             top: 160px;
+             left: -100%;
+             transition: 0.5s;
+             z-index: 1;
+         }
+         div.active { 
+             left: 0;
+         }
+         nav ul { 
+             display: block;
+             text-align: center;
+             text-decoration: none;
+         }
+         nav ul li {    
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(0,0,0,0.5);
+         }
+         nav ul li a{ 
+             color: #F8F8FE;
+             font-size: 35px;
+             font-family: 'Ubuntu';
+         }
+         .burger { 
+             line-height: 50px;
+             font-size: 24px;
+             width: 30px;
+             margin-left: 20px;
+             cursor: pointer;
+             z-index: 999;
+         } 
+         .background { 
+             display: none;
+         }
+         .smallerDevice-bg { 
+             min-height: 100%;
+             position: relative;
+         }
+         .bg-img img { 
+            width: 100%;
+            height: auto;
+            z-index: -1;
+         }
+        .floating-widgets { 
+            position: fixed;
+            right: 0;
+            top: 30%;
+            z-index: 999;
+        }
+        .widgets { 
+            margin: 10px 0px 0px 10px;
+        }
+        .widgets img { 
+            width: 100%;    
+        }
+        .widget-size {
+            height: 40px;
+            width: 40px;
+        }
+        .widget-position { 
+            justify-content: center;
+            align-items: center;
+            margin: 5px auto ;
+            border-radius: 5px 0 0 5px;
+        }
+        .whatsapp-widgets { 
+            background-color: #65bc54;
+        }
+        .messenger-widgets {
+            background-color: #00C6FF;
+        }
+        .companyh2 { 
+            text-align: center;
+            font-family: 'Ubuntu';
+            margin-top: 20px;
+        }
+        .companyparagraph { 
+            font-size: 16px;
+            line-height: 18px;
+            font-family: 'Ubuntu', sans-serif;
+            padding: 15px;
+            line-height: 1.6;
+        }
+        p.description { 
+            text-align: justify;
+            line-height: 1.3em;
+            padding: 10px 0px 0px 10px;
+            line-height: 1.6;
+        }
+        p.description:nth-child(3){ 
+            margin-bottom: 20px;
+        }
+        .aboutPage { 
+            display: block;
+            width: 100%;
+            height: auto;
+            background-image: linear-gradient(180deg,whitesmoke 0%,#b6793b 100%)!important;
+        }
+        .aboutH2 { 
+            font-family: 'Ubuntu';
+            text-align: center;
+            padding-top: 15px;
+        }
+        .first-item { 
+            width: 66.67%;
+            display: block;
+            height: auto;
+            margin: 0 auto;
+        }
+        .aboutImage img { 
+            width: 50px;
+            display: block;
+            margin: 0 auto;
+        }
+        .abouth4 { 
+            text-align: center;
+        }
+        .about1Paragraph p { 
+            display: block;
+            text-align: justify;
+            line-height: 1.3;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+            font-family: 'Helvetica';
+            line-height: 1.6;
+        }   
+        .first {
+            padding-top: 20px;
+        }
+        .secondlast { 
+            padding-bottom: 20px;
+        }
+        .kckTeam1 { 
+            width: 66.67%;
+            font-family: 'Lato';
+            text-align: center;
+            margin: 0 auto;
+        }
+        .section-bg { 
+            background: #F8F8FE;
+        }
+        .serviceHeading-header { 
+            padding: 30px;
+        }
+        .story-1 img { 
+            background-size: cover;
+            width: 100%;
+        }
+        section.servicebg .story-1 .text { 
+            display: block;
+            max-width: max-content;
+            font-family: 'Ubuntu';
+        }
+        .title-s1 { 
+            color: #3b3e40;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .description-s1 { 
+            text-align: justify;
+            margin: 20px;
+            line-height: 1.6;
+            font-family: 'Ubuntu';
+        }
+        .title-s2 { 
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+            color: #3b3e40;
+            font-family: 'Ubuntu';
+        }
+        .description-s2 { 
+            text-align: justify;
+            margin: 20px;
+            font-family: 'Ubuntu';
+            line-height: 1.6;
+        }
+        .swapPosition { 
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .story-1 img { 
+            margin-top: 30px;
+        }
+        .editor-1 { 
+            text-align: center;
+            font-family: 'Ubuntu';
+            margin-top: 15px;
+        }
+        .description-s3 { 
+            margin: 20px;
+            text-align: justify;
+            font-family: 'Ubuntu';
+            line-height: 1.6;
+        }
+        video { 
+            max-width: 100%;
+            height: auto;
+            background-size: cover;
+            margin-top: 30px;
+        }
+        .story-3title { 
+            font-weight: 600;
+            color: #3b3e40;
+            text-align: center;
+            font-family: 'Ubuntu';
+            margin: 20px;
+        }
+        .story-3 .carousel { 
+        display: none;
+    }
+    .gallery { 
+        margin: 0 1px;
+        position: relative;
+        width: 100%;
+        height: 1800px;
+    }
+    .gallery .completedPicture { 
+        float: left;
+        width: 100%;
+        height: 243px;
+    }
+    .gallery img { 
+        width: 100%;
+        height: auto;
+        margin: 0 0;
+    }
+        .client-title { 
+            text-align: center;
+            font-family: 'Ubuntu';
+            padding: 10px;
+            margin: 10px;
+        }
+        .client { 
+            background-image: linear-gradient(180deg,whitesmoke 0%,#b6793b 100%)!important;
+        }
+        div.clientcontainer { 
+            width: 100%;
+            margin: 0 auto;
+        }
+        div.logocontainer { 
+            margin: 0 auto;
+        }    
+        div.logocontainer .carousel-cell { 
+        width: 185px;
+        height: max-content;
+        margin: 0 auto;
+        }
+    div.logocontainer img { 
+        width: 125px;
+        height: 125px;
+        margin-left: 30px;
+        object-fit: contain;
+    }   
+        .footer { 
+            border: 2px solid black;
+            display:  block;
+            margin-top: 30px;
+            font-family: 'Ubuntu';
+            background-color: black;
+        }
+        .row { 
+            flex-direction: column;
+        }
+        .aboutcompany { 
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        .text { 
+            color: white;
+            line-height: 1.5;
+        }
+        .footerparagraph { 
+            text-align: justify;
+            padding: 20px;
+        }
+        .text-uppercase { 
+            text-transform: uppercase;
+        }
+        .contactus { 
+            text-align: center;
+            padding: 10px;
+        }
+        .number { 
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600px;
+        }
+        .address { 
+            text-align: center;
+            margin-top: 20px;
+        }
+        .addressname { 
+            text-transform: uppercase;
+            text-align: center;
+            margin: 30px;
+        }
+        .thirdrow { 
+            margin: 0 auto;
+            width: 80%;
+        }
+        iframe { 
+            width: 100%;
+        }
+        .copyright { 
+            font-size: 0.5rem;
+            text-align: center;
+            font-family: 'Ubuntu';
+            background-image: linear-gradient(to top, #c0762b , white);
+        }
+        span.colour { 
+    color: #c0762b;
+}
+    }
+     </style>       
+	</head>
+	<body>
+        <div class="navheader col" id="homeSection"  style="background-color:black;">
+            <div class="top-bar solid-bar container">
+                <div class="mini-widgets">
+                    <div class="contactHead topbar-text text-center text-uppercase text-relative infomation">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+                <div class="mini-widgets">
+                    <div class="contactHead hpnumber text-center text-uppercase text-relative phone-call">
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;"><i class="fa fa-phone" style="margin-right: 5px;"></i>0129886348</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header nav-position responsiveNav col" style="margin:0 auto;">
+            <nav>
+                <div class="logo">
+                    <a href="#">
+                        <img class="about1icon" src="images\kcklogo.png"></p>
+                    </a>
+                </div>
+                <div class="navi-box" id="nav-boxID">
+                    <nav class="active">
+                <ul class="navigation">
+                    <li class="navigation-content"><a href="#homeSection">Homies. </a></li>
+                    <li class="navigation-content"><a href="#aboutSection">About. </a></li>
+                    <li class="navigation-content"><a href="#servicesSection">Services. </a></li>
+                    <li class="navigation-content"><a href="#contactSection">Contact.</a></li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+                <!-- Smaller Device Interface-->
+                
+        </div>
+    <div class="background page-section1 col" style="visibility: visible; margin: 0px; border-radius: 0px; padding: 0px; position: static;">
+        <div class="first-background">
+            <div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="images\batchingplant.jpg"></div>
+        </div>  
+    </div>
+    <div class="smallerDevice-bg"> 
+        <div class="bg-img">
+            <img src="images\batchingplant.jpg">
+        </div>
+    </div>
+
+    <div class="floating-widgets">
+        <div class="container">
+        <div class="widgets whatsapp-widgets widget-size widget-position">
+            <a href="wa.me/60173361929">
+                <img src="https://img.icons8.com/office/40/000000/whatsapp.png">
+        </div>
+        <div class="widgets messenger-widgets widget-size widget-position">
+            <a href="messenger.com">
+                <img src="https://img.icons8.com/color/48/000000/facebook-messenger.png"/>
+            </a>
+
+        </div>
+        </div>
+    </div>
+     
+    <section class="aboutclass col" id="aboutSection">
+    <div class="companycontainer">
+        <div class="company">
+            <h2 class="companyh2 text-center text-uppercase">KCK KOK <span class="colour">ENGINERRING</span> SDN. BHD.</h2>
+            <div class="companyparagraph text-center">
+                <div class="aboutUs-row">
+                    <p class="description">KCK KOK ENGINEERING, established in 1997, serving for up to 8 years in concrete industry and up to 20 years in welding service. The main core businesses of the KCK involves in-house design and engineering services to wide variety of projects. Everything was based on the one solid founding principle —  <br>
+
+                    <p class="description">A welding business repairs, restores, and assists building metal-based items. Welding and fabrication services include flux core welding, aluminum welding, plasma cutting, metal fabrication, dump truck box repair, and more. A high-quality welding business can fix most things made out of metal. Ever since 1997, our team and facilities are equipped to handle all your needs within our footprint. KCK’s experienced team of fabricators, welders and operators have enabled our company to be the comprehensive team your project needs. </p>
+                    
+                    <p class="description">Despite welding business, we also operate business in ready-mixed concrete, often come with crane and concrete mixer trucks as a package.  It is used for mixing and transporting a large volume of concrete for use on a building site. KCK's concrete can be found supporting high-rise office buildings, professional and collegiate athletic facilities, major commercial ventures, highways, residential developments, and many other projects throughout Malaysia KCK has successfully done it before.  Depending on the requirement of the application, concrete mixers of various sizes and types are available.</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <div class="aboutPage col"> 
+            <section class="aboutUs-section">
+                <div class="divider"></div>
+                    <div class="first-divider">
+                        <div class="textbox text-center text-uppercase">
+                            <h2 class="aboutH2"> Our  Four <span class="colour">Founding Principles.</span></h2>
+                            <p class="aboutH2">Dedicated to our beloved customers.</p>
+                        </div>
+                    </div>
+                    <div class="aboutContainer">
+                    <div class="aboutFirstRow">
+                        <div class="first-item first">
+                            <div class="aboutImage">
+                                <span class="color-white"><img class="about1icon" src="images\idea.svg" style="color: white;"></span>
+                            </div>
+                            <div class="about1Text text-right">
+                                <h4 class="abouth4 text-right" style="letter-spacing: 1;">Innovative</h4>
+                                <div class="about1Paragraph text-right line-height">
+                                    <p> From problem clarification to implementation. Identify the Problems and outline the implementation steps. We will seek for the perfect solution and solve it in an innovative way.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="first-item second">
+                            <div class="aboutImage">
+                                <span class="color-white"><img class="about1icon" src="images\efficiency.svg" style="color: white;"></span>
+                            </div>
+                            <div class="about1Text text-right">
+                                <h4 class="abouth4 text-right" style="letter-spacing: 1;">Efficiency</h4>
+                                <div class="about1Paragraph text-right line-height">
+                                    <p>KCK employs has trucks for any size customer order. By adopting GPS technologies to ensure that our fleet of mixer trucks  delivers the correct high performing concrete to your job site, when you need it.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aboutFirstRow" style="margin-top:60px">
+                        <div class="first-item">
+                            <div class="aboutImage">
+                                <span class="color-white"><img class="about1icon" src="images\cost.svg" style="color: white;"></span>
+                            </div>
+                            <div class="about1Text text-right">
+                                <h4 class="abouth4 text-right" style="letter-spacing: 1;">Affordable</h4>
+                                <div class="about1Paragraph text-right line-height">
+                                    <p>At KCK , we provide the exact amount of ready mix concrete for your project, whatever the specification, at a price to suit your budget,directly to you on site. We offer some of the most competitive ready mix concrete prices around. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="first-item second secondlast">
+                            <div class="aboutImage">
+                                <span class="color-white"><img class="about1icon" src="images\trust.svg" style="color: white;"></span>
+                            </div>
+                            <div class="about1Text text-right">
+                                <h4 class="abouth4 text-right" style="letter-spacing: 1;">Trust</h4>
+                                <div class="about1Paragraph text-right line-height">
+                                    <p>High Quality concrete is produced in a high-tech automated batching plant in a computerized environment, therefore minimizing human error and providing consistent quality every time.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+            <!-- Services -->
+
+            <section class="page-section1 servicebg col" id="servicesSection">
+                <div class="section-bg"> 
+                    <div class="kckTeam1">
+                        <h2 class="serviceHeading-header text-center"> Our <span class="colour">Services</span></h2>
+                        <hr class="hrservice"></hr>
+                    </div>
+                        <div class="story-1">
+                            <img src="images\service1.jpg" data-aos="fade-right">
+                        <div class="text" data-aos="zoom-in">
+                            <h2 class="title-s1"> Concrete Batching Plant </h2>
+                            <div class="description-s1"><p style="color: black;background-color: transparent;">The main purpose of using a concrete batching plant is to produce homogenous and uniform concrete in a variety of construction applications. The plant must produce concrete consistently in batches one after the other in the same proportions. The most important function performed by this plant is that it coats the aggregates with cement. Some aggregates need consistent mixing with cement, and water in those case additives may be added.</p></div>                            
+                        </div>
+                        </div>
+                        <hr class="story1hr"></hr>
+                        <div class="story-1 swapPosition">   
+                            <div class="text2" data-aos="zoom-in">
+                                <h2 class=title-s2>Welding Services</h2>
+                                <p class="description-s2">Welding involved fabrication process whereby two or more parts are fused together by means of heat, pressure or both forming a join as the parts cool. Welding is usually used on metals and thermoplastics but can also be used on wood. The completed welded joint may be referred to as a weldment.</p>
+                            </div> 
+                            <img src="images\weld.jpeg" data-aos="fade-left" >
+                            <hr class="story2hr"></hr>                     
+                        </div>
+                        <div class="story-2">
+                            <div class="video-wrapper" data-aos="flip-down">
+                                <video playsinline autoplay muted loop>
+                                    <source src="videos\construction.mp4" type="video/mp4;">
+                                </video>
+                                <div class=videoHr></div>
+                            </div>
+                            <div class="editor" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                                <div class="texteditor">
+                                    <h2 class="editor-1">Construction</h2>
+                                    <p class="description-s3">KCK is well known for infrastructure projects which are responsible for keeping electricity and water flowing to homes and businesses. They're also responsible for the roads, bridges and other mass transit ways used to deliver people and goods across the nation. </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="story-3">
+                            <div class="story3container">
+                                <h2 class="story-3title" style="text-align: center;"> Completed <span class="colour">Projects</span></h2>
+
+                                    <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                                        <div class="carousel-cell responsive">
+                                            <img src="images\huehue.jpg">
+                                        </div>
+                                        <div class="carousel-cell responsive">
+                                            <img src="images\kckc.jpg">
+                                        </div>
+                                        <div class="carousel-cell responsive">
+                                            <img src="images\kckc1.jpg">
+                                        </div>
+                                        <div class="carousel-cell responsive">
+                                            <img src="images\kckc.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="gallery">
+                                        <div class="completedPicture">
+                                            <img src="images\completekck.jpeg">
+                                        </div>
+                                        <div class="completedPicture">
+                                            <img src="images\sport.jpeg">
+                                        </div>
+                                        <div class="completedPicture">
+                                            <img src="images\complete1.jpg">
+                                        </div>
+                                        <div class="completedPicture">
+                                            <img src="images\completed4.jpg">
+                                        </div>
+                                        <div class="completedPicture">
+                                            <img src="images\completed2.jpg">
+                                        </div>
+                                        <div class="completedPicture">
+                                            <img src="images\completed3.jpg">
+                                        </div>
+                                        <div class="completedPicture">
+                                            <img src="images\completed4.jpg">
+                                        </div>
+
+                                    </div>
+                            </div>
+                        </div>
+                    </div> 
+            </section>
+            <!-- Client partnerships -->
+            <section class="client">
+                <div class="clientcontainer">
+                    <div class="clientrow">
+                        <h2 class="client-title text-center"> Our <span class="colour">Clients</span></h2>
+                    </div>
+                    <div class="carousel" data-flickity='{ "groupCells": true }'>
+                        <div class="logocontainer">
+                            <div class="carousel-cell">
+                                <img class="logoimg" src="logo\ytl.png">
+                            </div>
+                        </div>
+                        <div class="logocontainer">
+                            <div class="carousel-cell">
+                                <img src="logo\ytl.png">
+                            </div>
+                        </div>
+                        <div class="logocontainer">
+                            <div class="carousel-cell">
+                                <img src="logo\hatimuda.png">
+                            </div>
+                        </div>
+                        <div class="logocontainer">
+                            <div class="carousel-cell">
+                                <img src="logo\ytl.png">
+                            </div>
+                        </div>
+                        <div class="logocontainer">
+                            <div class="carousel-cell">
+                                <img src="logo\ytl.png">
+                            </div>
+                        </div>
+                        <div class="logocontainer">
+                            <div class="carousel-cell">
+                                <img src="logo\ytl.png">
+                            </div>
+                        </div>
+                        <div class="logocontainer">
+                            <div class="carousel-cell">
+                                <img src="logo\ytl.png">
+                            </div>
+                        </div>
+                        <div class="logocontainer">
+                            <div class="carousel-cell">
+                                <img src="logo\ytl.png">
+                            </div>
+                        </div>
+                        <div class="logocontainer">
+                            <div class="carousel-cell">
+                                <img src="logo\ytl.png">
+                            </div>
+                        </div>
+                        <div class="logocontainer">
+                            <div class="carousel-cell">
+                                <img src="logo\ytl.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer -->
+            <section class="footer col" id="contactSection">
+                <div class="container">
+                    <div class="row">
+                        <div class="firstrow col-md-4 text">
+                            <h3 class="aboutcompany textsize text-uppercase"> About us </h3>
+                            <p class="footerparagraph">KCK KOK ENGINEERING, established in 1997, serving for up to 8 years in concrete industry and up to 20 years in welding service. The main core businesses of the KCK involves in-house design and engineering services to wide variety of projects. </p>
+                        </div>
+                        <div class="secondrow col-md-4 text">
+                            <h3 class="contactus text-left text-size text-uppercase">Contact Us</h3>
+                            <p class="number"><span class="colour">+60129886348<br>+60129896348</span></p>
+                            <h3 class="address text-left text-size text-uppercase">Our address</h3>
+                            <p class="addressname text-left text-uppercase">Lot 1018 Taman Saujana<br>22000 Jerteh Terengganu</p>
+                        </div>
+                        <div class="thirdrow col-md-4 text">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.7837984236144!2d102.45974026877224!3d5.7442384588307505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b6f2be4a054291%3A0xa78c11ece24fe812!2sKCK%20KOK%20ENGINEERING%20SDN%20BHD!5e0!3m2!1sen!2smy!4v1596271218065!5m2!1sen!2smy" width="500" height="210" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="copyright">
+                <p> COPYRIGHT © 2020 KCK KOK ENGINEERING. ALL RIGHTS RESERVED. </p>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function(){ 
+                     $('.burger').click(function(){ 
+                         $('nav').toggleClass('active')
+                     })
+                })
+            </script>
+<script>
+    $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 100) {
+        $(".nav-header").addClass("nav-change");   // removed the . from class
+    } else {
+        $(".nav-header").removeClass("nav-change");  // removed the . from class
+    }
+});
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 70) {
+        $("nav").addClass("nav-change1");   // removed the . from class
+    } else {
+        $("nav").removeClass("nav-change1");  // removed the . from class
+    }
+});
+</script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>  
+        <script type="text/javascript">
+    AOS.init({ 
+    duration:3000 });   
+  </script>        
+		<script src="js/particles.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+	</body>
+	</html>
+
