@@ -590,6 +590,7 @@ section .content1 h2:before {
     text-justify: auto;
     text-align: left;
     width: auto;
+    font-family: 'Lato', sans-serif;  
 }
 .line-height{ 
     line-height: 1.4rem !important;
@@ -1003,9 +1004,6 @@ p.description-s3 {
 }
 
 
-.carousel-cell { 
-    counter-increment: carousel-cell;
-}
 @media screen and (min-width: 1080px){ 
     .story-3 { 
         width: 100%;
@@ -1113,7 +1111,6 @@ section.footer {
     height: 400px;
     padding-top: 10px;
     position: relative;
-    border: 2px solid green;
 }
 div{ 
     display: block;
@@ -1184,8 +1181,7 @@ iframe {
     font-size: 20px;
     font-family: 'Ubuntu';
     text-align: center;
-    background-image: linear-gradient(to top, #c0762b , white);
-}
+    background-color: #c0762b;}
 
 @media screen and (max-width: 480px){ 
     section.footer { 
